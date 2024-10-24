@@ -5,7 +5,7 @@
 
 ![alt text](https://github.com/kimlar/text_file_h/blob/main/text_file-running.png "Showing the code in action")
 
-## Example of using text_file.h
+## Examples of using text_file.h
 
 ### How to read a text file:
 ```c
