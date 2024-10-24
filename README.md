@@ -21,7 +21,7 @@ if (file == NULL)
 i64 size = text_file_get_size(filename);
 str text = malloc(size);
 text_file_read_str(text, size, file);
-printf("%s\n", text);
+printf("%s\n", text); // OUTPUT
 free(text);
 text_file_close(file);
 ```
@@ -66,10 +66,10 @@ if (text == NULL)
 }
 if (!text_file_read_str(text, size, file))
 {
-	printf("Error: Failed to write settings file\n");
+	printf("Error: Failed to read settings file\n");
 	exit(1); // Exit to OS
 }
-printf("%s\n", text);
+printf("%s\n", text); // OUTPUT
 free(text);
 text_file_close(file);
 ```
