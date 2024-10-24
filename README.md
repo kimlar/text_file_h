@@ -40,4 +40,35 @@ text_file_write_str(text, file);
 text_file_close(file);
 ```
 
+### How to read a text file with a maximum safe guarding:
+```c
+str filename = "settings.txt";
+text_file file = text_file_openfor_read(filename);
+if (file == NULL)
+{
+	printf("Error: Failed to open settings file\n");
+	exit(1); // Exit to OS
+}
+i64 size = text_file_get_size(filename);
+if (size == -1)
+{
+	printf("Error: Failed to get size of settings file\n");
+	exit(1); // Exit to OS
+}
+str text = malloc(size);
+if (text == NULL)
+{
+	printf("Error: Failed to allocate memory\n");
+	exit(1);
+}
+if (!text_file_read_str(text, size, file))
+{
+	printf("Error: Failed to write settings file\n");
+	exit(1);
+}
+printf("%s\n", text);
+free(text);
+text_file_close(file);
+```
+
 This is a drop-in file for any Windows C projects to quickly add a higher level text file operation for reading and writing.
