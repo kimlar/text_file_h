@@ -41,7 +41,7 @@ text_file_write_str(text, file);
 text_file_close(file);
 ```
 
-### How to read a text file with a maximum safe guarding:
+### How to read a text file with maximum safe guarding:
 ```c
 str filename = "settings.txt";
 text_file file = text_file_openfor_read(filename);
