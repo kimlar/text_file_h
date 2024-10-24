@@ -59,12 +59,12 @@ str text = malloc(size);
 if (text == NULL)
 {
 	printf("Error: Failed to allocate memory\n");
-	exit(1);
+	exit(1); // Exit to OS
 }
 if (!text_file_read_str(text, size, file))
 {
 	printf("Error: Failed to write settings file\n");
-	exit(1);
+	exit(1); // Exit to OS
 }
 printf("%s\n", text);
 free(text);
