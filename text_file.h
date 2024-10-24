@@ -19,7 +19,7 @@
 //
 //		#include "text_file.h"
 //		...
-//		text_file file = text_file_openfor_read("bigtextfile.txt);
+//		text_file file = text_file_openfor_read("bigtextfile.txt");
 //		if (file == NULL)
 //		{
 //			printf("Error: Failed to open item file\n");
@@ -49,14 +49,14 @@
 //
 // Data types
 //
-typedef long long			i64;
-typedef unsigned char*		str;
+typedef long long	i64;
+typedef unsigned char*	str;
 
 //
 // File types
 //
 typedef FILE*		text_file;
-typedef i64			file_size;
+typedef i64		file_size;
 
 //
 // Prototypes: Text file
