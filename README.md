@@ -5,7 +5,7 @@
 ```c
 #include "text_file.h"
 ...
-text_file file = text_file_openfor_read("bigtextfile.txt);
+text_file file = text_file_openfor_read("bigtextfile.txt");
 if (file == NULL)
 {
 	printf("Error: Failed to open item file\n");
