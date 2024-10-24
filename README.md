@@ -11,16 +11,17 @@
 ```c
 #include "text_file.h"
 ...
-text_file file = text_file_openfor_read("bigtextfile.txt");
+str filename = "bigtextfile.txt";
+text_file file = text_file_openfor_read(filename);
 if (file == NULL)
 {
 	printf("Error: Failed to open item file\n");
 	exit(1); // Exit to OS
 }
-i64 size = text_file_get_size("bigtextfile.txt");
+i64 size = text_file_get_size(filename);
 str text = malloc(size);
 text_file_read_str(text, size, file);
-//printf("%s\n", text);
+printf("%s\n", text);
 free(text);
 text_file_close(file);
 ```
