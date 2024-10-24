@@ -1,10 +1,9 @@
 # text_file_h
-
-![alt text](https://github.com/kimlar/text_file_h/text_file-code-example.png "Showing the code")
+![alt text](https://github.com/kimlar/text_file_h/blob/main/text_file-code-example.png "Showing the code")
 
 <br>
 
-![alt text](https://github.com/kimlar/text_file_h/text_file-running.png "Showing the code in action")
+![alt text](https://github.com/kimlar/text_file_h/blob/main/text_file-running.png "Showing the code in action")
 
 ## Example of using text_file.h
 
