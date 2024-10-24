@@ -7,7 +7,7 @@
 
 ## Example of using text_file.h
 
-### How to read a text file
+### How to read a text file:
 ```c
 #include "text_file.h"
 ...
@@ -25,7 +25,7 @@ free(text);
 text_file_close(file);
 ```
 
-### How to write a text file in append mode
+### How to write a text file in append mode:
 ```c
 #include "text_file.h"
 ...
