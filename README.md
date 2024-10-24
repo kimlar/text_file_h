@@ -7,6 +7,7 @@
 
 ## Example of using text_file.h
 
+### How to read a text file
 ```c
 #include "text_file.h"
 ...
@@ -21,6 +22,21 @@ str text = malloc(size);
 text_file_read_str(text, size, file);
 //printf("%s\n", text);
 free(text);
+text_file_close(file);
+```
+
+### How to write a text file in append mode
+```c
+#include "text_file.h"
+...
+text_file file = text_file_openfor_write_append("application.log");
+if (file == NULL)
+{
+	printf("Error: Failed to open log file\n");
+	exit(1); // Exit to OS
+}
+str text = "LOG: Application has added an another entry to the log\n";
+text_file_write_str(text, file);
 text_file_close(file);
 ```
 
