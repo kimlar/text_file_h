@@ -9,7 +9,6 @@
 // 
 // NOTE: Since this text file utility is made for Windows,
 //       the newline character is \r\n instead of \n.
-// NOTE: The str type can be char* or wchar_t*
 // NOTE: Memory allocation is done on the user side. Not inside here.
 //
 // TODO: Make this also to work with C++.
