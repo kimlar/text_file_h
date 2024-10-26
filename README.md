@@ -19,7 +19,7 @@ if (file == NULL)
 	exit(1); // Exit to OS
 }
 i64 size = text_file_get_size(filename);
-str text = malloc(size);
+str text = malloc(size + 1);
 text_file_read_str(text, size, file);
 printf("%s\n", text); // OUTPUT
 free(text);
@@ -58,7 +58,7 @@ if (size == -1)
 	printf("Error: Failed to get size of settings file\n");
 	exit(1); // Exit to OS
 }
-str text = malloc(size);
+str text = malloc(size + 1);
 if (text == NULL)
 {
 	printf("Error: Failed to allocate memory\n");
