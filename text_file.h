@@ -15,6 +15,8 @@
 //       otherwise remember to add +1 like this: text = malloc(size + 1);
 //
 // TODO: Make this also to work with C++.
+// TODO: Add write/read for data types like int, float, etc.
+//       Probably make it to handle the conversion inside here.
 // 
 // 
 // Example of using text_file.h
