@@ -10,6 +10,9 @@
 // NOTE: Since this text file utility is made for Windows,
 //       the newline character is \r\n instead of \n.
 // NOTE: Memory allocation is done on the user side. Not inside here.
+// NOTE: If you are using text_file_get_size(..) then you don't need to
+//       add +1 the size when allocating memory, otherwise remember to
+//       add +1 like this: text = malloc(size + 1);
 //
 // TODO: Make this also to work with C++.
 // 
