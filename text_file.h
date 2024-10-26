@@ -13,6 +13,7 @@
 // NOTE: If you are using text_file_get_size(..) to get the size to allocate memory,
 //       then you don't need to add +1 in the size when allocating memory,
 //       otherwise remember to add +1 like this: text = malloc(size + 1);
+//       when dealing with strings (null terminated).
 //
 // TODO: Make this also to work with C++.
 // TODO: Add write/read for data types like int, float, etc.
