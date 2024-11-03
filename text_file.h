@@ -16,6 +16,7 @@
 //       when dealing with strings (null terminated).
 //
 // TODO: Make this also to work with C++.
+// TODO: Change the malloc/calloc to alloc (stack based mem allocation) instead for _f32 and _f64 to improve performance.
 // 
 // Example of using text_file.h
 //
